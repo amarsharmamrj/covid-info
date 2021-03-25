@@ -1,0 +1,215 @@
+.pt150 {
+    padding-top: 150px;
+}
+
+.pt350 {
+    padding-top: 350px;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.color1 {
+    color: #c50303;
+}
+
+.color2 {
+    color: #1d07d8;
+}
+
+.color3 {
+    color: #b900f5;
+}
+
+.color4 {
+    color: #fb06b0;
+}
+
+.card-bg1 {
+    background-color: #d9d9f9;
+    border-left: 10px solid blue;
+}
+
+.card-bg2 {
+    background-color: #fbe8a4;
+    border-left: 10px solid #ffc803;
+}
+
+.card-bg3 {
+    background-color: #c7f9ae;
+    border-left: 10px solid #57f906;
+}
+
+.card-bg4 {
+    background-color: #f7c2b2;
+    border-left: 10px solid #f75321;
+}
+
+.title {
+    font-family: cursive;
+    color: #086df9;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.title-hr {
+    margin-top: 5px;
+    text-align: center;
+    width: 150px;
+    margin-bottom: 40px;
+    border-top: 2px solid rgb(73, 208, 5);
+}
+
+#country-wise-section {
+    position: relative;
+}
+
+#country-wise-section .loader {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #c7c7facc;
+}
+
+.spinner-box {
+    width: 115px;
+    height: 115px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+}
+
+.configure-border-1 {
+    width: 115px;
+    height: 115px;
+    padding: 3px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1815f1;
+    animation: configure-clockwise 2s ease-in-out 0s infinite alternate;
+}
+
+.configure-border-2 {
+    width: 115px;
+    height: 115px;
+    padding: 3px;
+    left: -115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(9, 236, 5);
+    transform: rotate(45deg);
+    animation: configure-xclockwise 2s ease-in-out 0s infinite alternate;
+}
+
+.configure-core1 {
+    width: 100%;
+    height: 100%;
+    background-color: #3b9e0a;
+}
+
+.configure-core2 {
+    width: 100%;
+    height: 100%;
+    background-color: #f5653a;
+}
+
+@keyframes configure-clockwise {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes configure-xclockwise {
+    0% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(-135deg);
+    }
+    75% {
+        transform: rotate(-225deg);
+    }
+    100% {
+        transform: rotate(-315deg);
+    }
+}
+
+
+#country-wise-section .country-name {
+    margin-right: 40px;
+    color: #f10f97;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+#country-wise-section .country-flag {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+#country-wise-section select {
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+#country-wise-section select option {
+    font-size: 20px;
+}
+
+#country-wise-section .case-type-card{
+    margin-bottom: 15px;
+    padding: 10px 0px;
+    border-radius: 20px 0px;
+    border-top: 4px;
+    border-left: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+#country-wise-section .case-type-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#country-wise-section .case-type {
+    border-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#country-wise-section .case-count {
+    font-size: 18px;
+}
